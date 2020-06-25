@@ -1,8 +1,6 @@
 import React from 'react';
-import { withRouter } from 'react-router-dom';
 import Nav from './components/Nav';
 
-import Routes from './config/routes';
 import Header from './components/Header';
 import Body from './components/Body';
 import Footer from './components/Footer';
@@ -23,4 +21,4 @@ function App() {
   );
 }
 
-export default withRouter (App);
+export default App;

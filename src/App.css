@@ -4,11 +4,12 @@
 
 .App {
   background: linear-gradient( rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8) ), url('./rain.jpg');
-  background-size: 200%;
+  background-size: fill;
   color: rgb(219, 214, 181) ;
   padding: 80px 0 0 20%;
-  height: 600vh;
-  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
+  height: 100%;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  scroll-behavior: smooth;
 }
 
 .rain {
@@ -48,7 +49,7 @@
 ---- */
 
 .header {
-  /* background: inherit; */
+  background: linear-gradient(to top, transparent, rgb(5, 5, 5) 33%);
   /* display: inline-block; */
   top: 0;
   height: 14%;
@@ -56,7 +57,9 @@
   padding: 12px 0 0 0;
   text-align: center;
   width: 80vw;
-  background-image: linear-gradient(to top, transparent, black 33%);
+  /* background-image: linear-gradient( rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8) ), url('./rain.jpg') */
+  /* url('./rain.jpg'), linear-gradient(#ebdb01, #b90a04); */
+  /* linear-gradient(to top, transparent, black 33%); */
 }
 
 #topline {
@@ -76,8 +79,9 @@
   top: 0;
   left: 0;
   list-style: none;
-  background: linear-gradient(rgba(1, 8, 44, 0.8), rgba(6, 50, 92, 0.8));
-  margin: 0 20% 0 0;
+  /* background: linear-gradient(rgba(1, 8, 44, 0.8), rgba(6, 50, 92, 0.8)); */
+  background: linear-gradient(to right, rgba(1, 8, 44, 0.8), rgba(3, 3, 3, 0.8));
+
   /* padding: 30px 0; */
 }
 
@@ -103,8 +107,8 @@ nav li {
 .lcard {
   background: rgba(196, 206, 218, 0.5);
   margin: 20px;
-  height: 140px;
-  box-shadow: 0 0 80px rgba(196, 206, 218, 1);
+  /* height: 140px; */
+  /* box-shadow: 0 0 80px rgba(196, 206, 218, 1); */
   border-radius: 35px;
   padding: 30px;
   text-align: left;
@@ -113,19 +117,31 @@ nav li {
 .rcard {
   background: rgba(196, 206, 218, 0.5);
   margin: 20px;
-  height: 140px;
-  box-shadow: 0 0 80px rgba(196, 206, 218, 1);
+  /* height: 140px; */
+  /* box-shadow: 0 0 80px rgba(196, 206, 218, 1); */
   border-radius: 35px;
   padding: 30px;
   text-align: right;
 }
 
 img {
-  height: 100px;
+  height: 210px;
+  padding: 15px;
   /* width: 100px; */
-  z-index: 1;
+  /* z-index: 1; */
   /* float: left; */
+  display: inline-block;
 }
+
+.section {
+  padding: 100px 0;
+}
+
+/* ----
+ Resume
+---- */
+
+
 
 /* ----
  Contact
@@ -153,6 +169,17 @@ input {
   background: rgb(61, 71, 104);
   color: rgb(159, 206, 188);
   font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
+}
+
+#form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+}
+
+.stairs {
+  display: block;
 }
 
 /* ----

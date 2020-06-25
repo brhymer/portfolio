@@ -2,9 +2,9 @@ import React from 'react';
 
 const Contact = () => {
     return (
-        <div id="contact-me">
-            Contact info goes here
-            <form action="mailto:leiqien28@hotmail.com" method="post" enctype="text/plain">
+        <div className="section" id="contact-me">
+            <p className="stairs">Send me an email at leiqien28@hotmail.com, or use this form:</p>
+            <form id = "form" action="mailto:leiqien28@hotmail.com" method="post" enctype="text/plain">
                 <input type="text" placeholder="First Name"/>
                 <br />
                 <input type="text" placeholder="Last Name"/>

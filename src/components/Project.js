@@ -7,7 +7,7 @@ class Project extends Component {
                 <h3>{this.props.title}</h3>
                 <p>{this.props.description}</p>
                 <p>Technologies: {this.props.tech}</p>
-                <img src={this.props.image1}/><img src={this.props.image2}/>
+                <img src={this.props.image1} alt="first img of {{this.props.title}}"/><img src={this.props.image2} alt='second img of {{this.props.title}}'/>
             </div>
         );
     }

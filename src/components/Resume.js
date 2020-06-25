@@ -2,8 +2,8 @@ import React from 'react';
 
 const Resume = () => {
     return (
-        <div id="resume">
-            Resume goes here
+        <div className="section" id="resume">
+            Click the following link to download my resume:
             <a href="br-res.pdf" download>Download</a>
         </div>
     );
