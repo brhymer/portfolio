@@ -4,7 +4,8 @@ class Header extends Component {
     render() {
         return (
             <div className="header">
-                <h1 id ="topline">Brad Rhymer - - - Software Developer</h1>
+                <h1 id ="topline">Brad Rhymer <br/> Frontend/Fullstack Software Developer</h1>
+
             </div>
         );
     }

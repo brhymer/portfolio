@@ -13,7 +13,6 @@ function App() {
       <div className="rain">
         <Header />
         <Nav />
-        {/* <Routes /> */}
         <Body />
         <Footer />
       </div>
