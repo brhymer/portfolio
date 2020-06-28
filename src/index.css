@@ -1,13 +1,247 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+/* ----
+ Entire
+---- */
+@import url('https://fonts.googleapis.com/css?family=Dosis');
+
+.App {
+  background: linear-gradient( rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8) ), url('./rain.jpg');
+  background-size: fill;
+  color: rgb(219, 214, 181) ;
+  padding: 80px 0 0 20%;
+  height: 100%;
+  font-family: 'Dosis';
+  scroll-behavior: smooth;
+  font-size: larger;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.rain {
+  margin: 0;
+  padding: 0;
 }
+::-webkit-scrollbar {
+  width: 20px;
+}
+
+::-webkit-scrollbar-track {
+  background: rgba(1, 8, 44, 0.8);
+  /* box-shadow: inset 0 0 50px rgb(210, 247, 2);  */
+}
+ 
+::-webkit-scrollbar-thumb {
+  background: rgb(49, 114, 167); 
+  border-radius: 20px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(4, 44, 241, 0.8); 
+}
+
+hr {
+  height: 8px;
+  background: radial-gradient(circle, rgba(0,0,0,0) 0%, rgba(196, 206, 218, 0.5) 42%, rgba(1, 8, 44, 0.1) 100%);
+  /* background: linear-gradient(rgba(196, 206, 218, 0.5), rgba(1, 8, 44, 0) 40%); */
+  border: none;
+  border-radius: 0 0 50% 50%;
+  width: 95%;
+
+}
+
+/* ----
+ Header
+---- */
+
+.header {
+  background: linear-gradient(to top, transparent, rgb(5, 5, 5) 33%);
+  /* display: inline-block; */
+  top: 0;
+  height: 16%;
+  position: fixed;
+  padding: 12px 0 0 0;
+  text-align: center;
+  width: 80vw;
+  z-index: 1;
+  /* background-image: linear-gradient( rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8) ), url('./rain.jpg') */
+  /* url('./rain.jpg'), linear-gradient(#ebdb01, #b90a04); */
+  /* linear-gradient(to top, transparent, black 33%); */
+}
+
+#topline {
+  padding: 0;
+  margin: 0;
+  display: inline;
+}
+
+/* ----
+  Nav
+---- */
+
+.sidenav {
+  height: 100%;
+  width: 20%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  list-style: none;
+  /* background: linear-gradient(rgba(1, 8, 44, 0.8), rgba(6, 50, 92, 0.8)); */
+  background: linear-gradient(to right, rgba(1, 8, 44, 0.8), rgba(3, 3, 33, 0.2));
+
+  /* padding: 30px 0; */
+}
+
+nav a {
+  list-style: none;
+  padding: 68px 5%;
+  color: rgb(108, 165, 212);
+  text-decoration: none;
+  height: 20%;
+}
+
+.spacing {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+#about, #projects, #resume {
+  margin-bottom: 30px;
+}
+
+/* ----
+  About
+---- */
+
+.about {
+  text-align: center;
+}
+
+.abouth {
+  padding-top: 1%;
+  background: -webkit-linear-gradient(#19278C, #3B5EDB);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+/* ----
+  Body
+---- */
+
+.cont {
+  background: rgba(5, 53, 97, 0.3);
+  height: 85%;
+  margin: 1%;
+}
+
+.body {
+  transition: transform 5s ease-in-out;
+}
+
+.lcard {
+  background: rgba(196, 206, 218, 0.5);
+  margin: 20px;
+  /* height: 140px; */
+  /* box-shadow: 0 0 80px rgba(196, 206, 218, 1); */
+  border-radius: 35px;
+  padding: 30px;
+  text-align: left;
+}
+
+.rcard {
+  background: rgba(196, 206, 218, 0.5);
+  margin: 20px;
+  /* height: 140px; */
+  /* box-shadow: 0 0 80px rgba(196, 206, 218, 1); */
+  border-radius: 35px;
+  padding: 30px;
+  text-align: right;
+}
+
+img {
+  height: 240px;
+  padding: 15px;
+  /* width: 100px; */
+  /* z-index: 1; */
+  /* float: left; */
+  display: inline-block;
+  transition: transform 1s ease-in-out;
+}
+
+img:hover {
+  transform: scale(1.6)
+
+}
+
+/* .section {
+  padding: 40px 0;
+} */
+
+.projlink {
+  text-decoration: none;
+  color: darkblue;
+  transition: box-shadow 2s, color 2s, background 2s linear;
+}
+
+.projlink:hover {
+  box-shadow: 0 0 30px darkblue;
+  background: darkblue;
+  color: gold
+}
+
+/* ----
+ Resume
+---- */
+
+.resume {
+  text-align: center;
+  font-size: larger;
+  background: rgba(196, 206, 218, 0.5);
+  border-radius: 35px;
+}
+
+/* ----
+ Contact
+---- */
+
+input {
+  display: block;
+  margin: 18px 0;
+  padding: 10px;
+  border-radius: 0 0 15px 15px;
+  background: rgb(61, 71, 104);
+  color: rgb(159, 206, 188);
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
+}
+
+::placeholder{
+  color: rgb(159, 206, 188)
+}
+
+#contact {
+  display: block;
+  margin: 18px 0;
+  padding: 10px;
+  border-radius: 0 0 15px 15px;
+  background: rgb(61, 71, 104);
+  color: rgb(159, 206, 188);
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
+}
+
+#form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+}
+
+.stairs {
+  display: block;
+}
+
+.contlink {
+  color: darkblue;
+  text-decoration: none;
+}
+
+/* ----
+ Footer
+---- */
