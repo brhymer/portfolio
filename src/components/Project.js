@@ -6,7 +6,7 @@ class Project extends Component {
             <div className={this.props.index%2===0 ? "rcard" : "lcard"}>
                 <br/>
                 <br/>
-                <h3>{this.props.title}</h3>
+                <h3 className="abouth">{this.props.title}</h3>
                 <p>{this.props.description}</p>
                 <p>Technologies: {this.props.tech}</p>
                 <p>Links:</p>

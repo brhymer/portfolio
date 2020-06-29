@@ -46,6 +46,10 @@ hr {
 
 }
 
+body {
+  margin: 0;
+}
+
 /* ----
  Header
 ---- */
@@ -54,7 +58,7 @@ hr {
   background: linear-gradient(to top, transparent, rgb(5, 5, 5) 33%);
   /* display: inline-block; */
   top: 0;
-  height: 16%;
+  height: 19%;
   position: fixed;
   padding: 12px 0 0 0;
   text-align: center;
@@ -68,7 +72,7 @@ hr {
 #topline {
   padding: 0;
   margin: 0;
-  display: inline;
+  display: block;
 }
 
 /* ----
@@ -94,6 +98,10 @@ nav a {
   color: rgb(108, 165, 212);
   text-decoration: none;
   height: 20%;
+}
+
+nav ul {
+  top: 0;
 }
 
 .spacing {
@@ -133,6 +141,7 @@ nav a {
 }
 
 .body {
+
   transition: transform 5s ease-in-out;
 }
 
