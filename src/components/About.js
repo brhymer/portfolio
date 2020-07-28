@@ -13,8 +13,8 @@ const About = () => {
             <h2 className="abouth" style={{textIndent: "50%"}}>Where I'm coming from</h2>
             <p className="about">I previously lived in Japan, where I taught children from as young as 6 months to as old as 9th grade.  I have also worked in hospitality, gone to culinary school, and managed a team of proofreaders for a translation company.</p>
             <h2 className="abouth" style={{textIndent: "70%"}}>Where I'm going</h2>
-            <p className="about">I will continue learning about frontend development and building responsive, innovative apps.</p>
-            <p className="about">My future goal is to build the type of game that I have always wanted to play.</p>
+            <p className="about">I am continually learning about frontend development and working on new projects</p>
+            <p className="about">I am seeking a role where I can be a part of a team building responsive, innovative apps..</p>
         </div>
     );
 }
