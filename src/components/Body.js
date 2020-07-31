@@ -7,7 +7,7 @@ import Resume from './Resume';
 class Body extends Component {
     render() {
         return (
-            <div>
+            <div className="main_flow">
                 <article id="about"></article>
                 <br/>
                 <br/>

@@ -1,17 +1,18 @@
 /* ----
  Entire
 ---- */
-@import url('https://fonts.googleapis.com/css?family=Dosis');
+@import url('https://fonts.googleapis.com/css?family=Inconsolata');
 
 .App {
   background: linear-gradient( rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8) ), url('./rain.jpg');
   background-size: fill;
-  color: rgb(92, 209, 224) ;
+  color: rgb(193, 206, 207) ;
   padding: 80px 0 0 20%;
   height: 100%;
-  font-family: 'Dosis';
+  min-height: 4600px;
+  font-family: 'Inconsolata';
   scroll-behavior: smooth;
-  font-size: larger;
+  font-size: large;
 }
 
 .rain {
@@ -50,6 +51,10 @@ body {
   margin: 0;
 }
 
+.main_flow{
+  margin: 5% 5% 0 5%;
+}
+
 /* ----
  Header
 ---- */
@@ -58,7 +63,7 @@ body {
   background: linear-gradient(to top, transparent, rgb(5, 5, 5) 33%);
   /* display: inline-block; */
   top: 0;
-  height: 19%;
+  height: 26%;
   position: fixed;
   padding: 12px 0 0 0;
   text-align: center;
@@ -111,7 +116,7 @@ nav ul {
 }
 
 #about, #projects, #resume {
-  margin-bottom: 30px;
+  margin: 40px 0;
 }
 
 /* ----
@@ -120,11 +125,13 @@ nav ul {
 
 .about {
   text-align: center;
+  padding-bottom: 20px;
 }
 
 .abouth {
   /* padding-top: 1%; */
   /* text-align: center; */
+  padding-bottom: 20px;
   font-size: 32px;
   font-weight: bolder;
   background: -webkit-linear-gradient(#19278C, #3B5EDB);
@@ -140,7 +147,7 @@ nav ul {
 .cont {
   background: rgba(5, 53, 97, 0.3);
   height: 85%;
-  margin: 1%;
+  margin: 8%;
 }
 
 .body {
