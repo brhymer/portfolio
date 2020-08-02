@@ -1,4 +1,4 @@
-[<img src="./src/portfolio.png" width=500>](https://bradrhymer.herokuapp.com/)
+[<img src="./src/portfolio.png" height=450>](https://bradrhymer.herokuapp.com/)
 
 # Portfolio
 
