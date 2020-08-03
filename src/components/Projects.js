@@ -40,7 +40,7 @@ class Projects extends Component {
             description: "A tongue-in-cheek homage to the NES classic, Nelda boasts a custom battle system, a variety of treasures and weapons, 6 levels, 1 secret area and 4 possible endings. This one was a lot of fun putting together, and has the potential for nearly endless expansion.", 
             tech: "An in-browser game using JQuery, Javascript, and HTML",
             github: "https://github.com/brhymer/The-Legend-of-Nelda",
-            live: "https://brhymer.github.io/Project-zero/",
+            live: "https://brhymer.github.io/The-Legend-of-Nelda/",
             image1: nelda1,
             image2: nelda2
         }]
